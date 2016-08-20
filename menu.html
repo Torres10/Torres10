@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Experiment </title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style> 
+		body{
+
+	background-color: #F0E8D0 ;
+	}
+		.navbar
+	{
+		font-family: Montserrat, sans-serif;
+		margin-bottom: 0;
+		background-color: #2d2d30;
+		border: 0;
+		font-size: 12px !important;
+		letter-spacing: 4px;
+		opacity: 0.7;
+	}
+.navbar li a, .navbar .navbar-brand 
+	{ 
+		color: #d5d5d5 !important;
+	}
+.navbar-nav li a:hover 
+	{
+		color: #fff !important;
+	}
+.navbar-nav li.active a 
+	{
+		color: #fff !important;
+		background-color: #29292c !important;
+	}
+.navbar-default .navbar-toggle 
+	{
+		border-color: transparent;
+	}
+	 #navi {
+ 	margin-right:700px;
+}
+.style_prevu_kit
+{	background-color:  #F0E8D0;
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+.flip-container,.pic1,.pic1-back,.pic2,.pic2-back,.pic3,.pic3-back,.pic4,.pic4-back{
+  width: 100%;
+  height: 245px;
+}
+.flipper{
+  transition: .6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front, .back
+ { backface-visibility: hidden;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front{
+  transform: rotateY(0deg);
+}
+
+.back{
+  transform: rotateY(-180deg);
+}
+ 
+    
+/* Hover - Toggle */
+.flip-container:hover .front,
+.flip-container.hover .front
+  {transform: rotateY(180deg);
+}
+.flip-container:hover .back,
+.flip-container.hover .back
+ { transform: rotateY(0deg);
+  }  
+ 
+.pic1
+  {background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWredOtiUxTDF8Go45EE_Q33ihk3tXypQt9snxVv36QUrJQzG2");
+  //background: #bcea67;
+  background-size:cover;
+  }
+.pic1-back
+ { background: url("https://image.freepik.com/free-vector/ornamental-menu-template_23-2147510362.jpg");
+  //background: #ffdd54;
+  background-size:cover;
+
+  }
+  .pic2
+  {background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdaKkBgR-sovu2j8OPLAIzMQiTlfMUpbA9DgXidBzYWgeyeinDGw");
+  //background: #bcea67;
+  background-size:cover;
+  }
+.pic2-back
+ { background: url("http://simplygood.us/wp-content/uploads/2013/06/simply-good-catering-cold-lunch-menu-v3.jpg");
+  //background: #ffdd54;
+  background-size:cover;
+
+  }
+  .pic3
+  {background: url("http://orig07.deviantart.net/8045/f/2010/053/f/7/hi_tea_by_antvak.jpg");
+  //background: #bcea67;
+  background-size:cover;
+  }
+.pic3-back
+ { background: url("http://d1v471jzilqnl0.cloudfront.net/wp-content/uploads/2012/05/afternoon-tea-menu.jpg");
+  //background: #ffdd54;
+  background-size:cover;
+
+  }
+  .pic4
+  {background: url("http://ghk.h-cdn.co/assets/16/05/1454621767-dinner.jpg");
+  //background: #bcea67;
+  background-size:cover;
+  }
+.pic4-back
+ { background: url("http://www.turntablenyc.com/wp-content/uploads/2013/08/DINNER-MENU21-776x1024.jpg");
+  //background: #ffdd54;
+  background-size:cover;
+
+  }
+  
+  li{
+	word-spacing: 10px;
+	display:inline;
+}
+a{
+	text-decoration: none;
+}
+a:hover, a:active{
+	text-decoration: none;
+}
+h1{
+	text-align: center;
+}
+	</style>
+
+
+</head>
+<body >
+	<!--Nav Bar-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+			
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li id="navi"><a>Casa Ristorante</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="dishes.html">Dishes</a></li>
+					<li><a href="deals.html">Deal</a></li>
+					<li><a href="#review.html">Review</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	 <div class="row">
+     <br><br>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6">
+          <h1> Menu</h1>
+            <p> Casa Ristorante offers good food and awesome views of the capital Islamabad. We’re all about good recipes, and about quality home cooking that everyone can enjoy. Whether you’re looking for some healthy inspiration or learning how to cook a decadent dessert, we’ve trustworthy guidance for all your foodie needs.</p>
+      </div>
+      <div class="col-md-3">
+      </div>
+      </div>
+      <br>
+      <div class="row">
+      	<div class="col-md-2">
+      	</div>
+      <div class="col-md-2">
+      	<div class="flip-container style_prevu_kit" id="flip">
+                <div class="flipper"> 
+                    <div class="front pic1">
+                	</div>
+                   	<div class="back pic1-back">
+                	</div>
+                </div>
+            </div>
+      </div>
+      <div class="col-md-2">
+      		 <div class="flip-container style_prevu_kit" id="flip">
+                <div class="flipper"> 
+                    <div class="front pic2">
+                	</div>
+                   	<div class="back pic2-back">
+                	</div>
+                </div>
+            </div>
+      </div>
+      <div class="col-md-2">
+      	<div class="flip-container style_prevu_kit" id="flip">
+                <div class="flipper"> 
+                    <div class="front pic3">
+                	</div>
+                   	<div class="back pic3-back">
+                	</div>
+                </div>
+            </div>
+      </div>
+      <div class="col-md-2">
+      		 <div class="flip-container style_prevu_kit"  id="flip">
+                <div class="flipper"> 
+                    <div class="front pic4">
+                	</div>
+                   	<div class="back pic4-back">
+                	</div>
+                </div>
+            </div>
+      </div>
+    </div>
+     <br><br><br> <br><br><br> <br><br>
+      
+    
+<!-- Footer -->
+  
+<div class="footer">
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5">
+          <h4>Do You Have Any Questions ?</h4>
+        </div>
+      
+        <div class="col-md-3">
+          <h4>Email: support@.org </h4>
+        </div>
+        <div class="col-md-3">
+          <h4>Phone: +92-324-2758478</h4>
+        </div>
+          <br><br>
+        <div class="row">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-5">
+            <h4>About Superlist</h4>
+            <h6>Previous · Complete CSS Reference · Next The border-radius property is used to add rounded corners to an element.</h6>
+          </div>
+          <div class="col-md-3">
+            <h4>About Superlist</h4>
+            <h6>Previous · Complete CSS Reference · Next The border-radius property is used to add rounded corners to an element.,</h6>
+          </div>
+          <div class="col-md-3">
+            <h4>Stay Connected</h4>
+            <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.google.com.pk"><i class="fa fa-google"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      <div class="row">
+          <br>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5">
+          <h6>Previous · Complete CSS Reference</h6>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4">
+          <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="#">Menu </a></li>
+            <li><a href="dishes.html">Dishes </a></li>
+            <li><a href="deals.html">Deals </a></li>
+          </ul>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

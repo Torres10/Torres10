@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Dishes </title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style> 
+      body{
+
+    background-color: #F0E8D0 ;
+    }
+      .navbar
+  {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    opacity: 0.7;
+  }
+.navbar li a, .navbar .navbar-brand 
+  { 
+    color: #d5d5d5 !important;
+  }
+.navbar-nav li a:hover 
+  {
+    color: #fff !important;
+  }
+.navbar-nav li.active a 
+  {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+.navbar-default .navbar-toggle 
+  {
+    border-color: transparent;
+  }
+   #navi {
+    margin-right:700px
+}
+  /* Contenedor - Asignamos perspectiva */
+  li{
+    word-spacing: 10px;
+    display:inline;
+}
+a{
+    text-decoration: none;
+}
+a:hover, a:active{
+    text-decoration: none;
+}
+.style_prevu_kit
+{
+    display:inline-block;
+    border:0;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+.four{
+    background-image:url("http://www.turntablenyc.com/wp-content/uploads/2013/08/DINNER-MENU21-776x1024.jpg");
+}
+	</style>
+}
+</head>
+<body >
+  <!--Nav Bar-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      
+      </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="navi"><a>Casa Ristorante</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="teacher.html">Menu</a></li>
+                    <li><a href="#">Dishes</a></li>
+                    <li><a href="#">Deal</a></li>
+                    <li><a href="#">Review</a></li>
+                </ul>
+            </div>
+    </div>
+  </nav>
+	 <div class="row">
+     <br><br>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6">
+          <h1 style="text-align:center"> Dishes</h1>
+            <p> Within Pakistan, cuisine varies greatly from region to region, reflecting the country's ethnic and cultural diversity. Food from the eastern provinces of Punjab and Sindh can be highly seasoned and spicy, which is characteristic of the flavors of the South Asian region.</p>
+      </div>
+      <br>
+  </div>
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      
+      <div class="col-md-6">
+      <div class="col-md-12" style="height: 245px">
+            <div class="flip-container style_prevu_kit" id="flip">
+            </div>
+      </div>    
+         <div class="col-md-6" style="height: 245px;margin-top:10px">
+                  <div class="flip-container style_prevu_kit" id="flip">
+                  </div>
+         </div>
+         <div class="col-md-6" style="height: 245px;margin-top:10px">
+                  <div class="flip-container style_prevu_kit" id="flip">
+                </div>
+       </div>  
+        <div class="col-md-6 four" style="height: 500px;margin-top:10px" >
+                  <div class="flip-container style_prevu_kit" id="flip">
+                </div>
+      </div>
+      </div>
+      <div class="col-md-1">
+      </div>
+   </div>
+<!-- Footer -->
+    
+<div class="footer">
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-5">
+                    <h4>Do You Have Any Questions ?</h4>
+                </div>
+            
+                <div class="col-md-3">
+                    <h4>Email: support@.org </h4>
+                </div>
+                <div class="col-md-3">
+                    <h4>Phone: +92-324-2758478</h4>
+                </div>
+                    <br><br>
+                <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-5">
+                        <h4>About Superlist</h4>
+                        <h6>Previous · Complete CSS Reference · Next The border-radius property is used to add rounded corners to an element.</h6>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>About Superlist</h4>
+                        <h6>Previous · Complete CSS Reference · Next The border-radius property is used to add rounded corners to an element.,</h6>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Stay Connected</h4>
+                        <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.google.com.pk"><i class="fa fa-google"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            <div class="row">
+                    <br>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-5">
+                    <h6>Previous · Complete CSS Reference</h6>
+                </div>
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li><a href="">Home </a></li>
+                        <li><a href="">Menu </a></li>
+                        <li><a href="">Dishes </a></li>
+                        <li><a href="">Deals </a></li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
