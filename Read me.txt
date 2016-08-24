@@ -11,3 +11,4 @@ August 23,2016
 
 August 24, 2016
 	Made video folds
+	made thumbnails using bootstrap
