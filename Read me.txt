@@ -8,3 +8,6 @@ August 23,2016
 	Navbar
 	Folds
 	Multisite
+
+August 24, 2016
+	Made video folds
